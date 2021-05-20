@@ -72,11 +72,11 @@ NAMESPACE= "dc-apps"
 INGRESS= "dc-ig-lib-ga-1589529604-f72ef11f3ab089a8c677044eb28292cd-0000.au-syd.containers.appdomain.cloud"
     /* -----------DevOps Commander  created env variables------------ */
 
-    DOCKER_IMAGE = readMavenPom().getArtifactId()
+    DOCKER_IMAGE = readbuild.gradle().getArtifactId()
     // DOCKER_TAG = "$BUILD_NUMBER"
-    DOCKER_TAG = readMavenPom().getVersion()
-    componentName = readMavenPom().getArtifactId()
-    componentVersion = readMavenPom().getVersion()
+    DOCKER_TAG = readbuild.gradle().getVersion()
+    componentName = readbuild.gradle()).getArtifactId()
+    componentVersion = readbuild.gradle().getVersion()
   }
   stages {
 
